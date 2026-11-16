@@ -29,6 +29,6 @@ Date : 16 novembre 2026. Manuscrit V3. Les résultats ci-dessous concernent le b
 | Dépendances | Après mise à jour Astro : npm audit, zéro vulnérabilité connue |
 | Logo FULBI | Fichier fourni intégré à l’en-tête et au pied de page ; dimensions proportionnelles, texte alternatif et affichage mobile contrôlés |
 
-Neuf tests Node passent. Huit groupes de tests navigateur passent. Le vérificateur de concordance indépendant passe. Les captures de l’accueil, de la recherche, du formulaire et de la lecture mobile ont été générées pour examen visuel.
+Neuf tests Node passent. Neuf groupes de tests navigateur passent, dont le réglage effectif de la taille du texte sur mobile. Le vérificateur de concordance indépendant passe. Les captures de l’accueil, de la recherche, du formulaire et de la lecture mobile ont été générées pour examen visuel.
 
 Limites : pas d’audit RGAA exhaustif, pas de test avec une personne utilisatrice de lecteur d’écran, pas de revue juridique du fond, pas de publication d’issue de test et pas de simulation réelle d’une panne GitHub en production. Les tests de synchronisation couvrent les cas d’erreur avec des réponses simulées. La validation des textes et les décisions du comité restent humaines.

@@ -1,0 +1,100 @@
+{
+  "result": "PASS",
+  "checkedAt": "2026-11-16T17:20:34.171Z",
+  "url": "https://didierthebault-web.github.io/guide-sectoriel-rgpd/",
+  "checks": [
+    {
+      "route": "",
+      "status": 200,
+      "bytes": 11272
+    },
+    {
+      "route": "parties/i/",
+      "status": 200,
+      "bytes": 82735
+    },
+    {
+      "route": "parties/ii/",
+      "status": 200,
+      "bytes": 120007
+    },
+    {
+      "route": "parties/iii/",
+      "status": 200,
+      "bytes": 161669
+    },
+    {
+      "route": "parties/iv/",
+      "status": 200,
+      "bytes": 132314
+    },
+    {
+      "route": "parties/v/",
+      "status": 200,
+      "bytes": 137837
+    },
+    {
+      "route": "parties/vi/",
+      "status": 200,
+      "bytes": 117005
+    },
+    {
+      "route": "parties/vii/",
+      "status": 200,
+      "bytes": 161200
+    },
+    {
+      "route": "fiches/",
+      "status": 200,
+      "bytes": 10077
+    },
+    {
+      "route": "outils/",
+      "status": 200,
+      "bytes": 16130
+    },
+    {
+      "route": "concertation/",
+      "status": 200,
+      "bytes": 11016
+    },
+    {
+      "route": "validations/",
+      "status": 200,
+      "bytes": 156358
+    },
+    {
+      "route": "recherche/",
+      "status": 200,
+      "bytes": 6911
+    },
+    {
+      "route": "sections/III-fiche-01/",
+      "status": 200,
+      "bytes": 20421
+    },
+    {
+      "route": "pagefind/pagefind.js",
+      "status": 200,
+      "bytes": 47228
+    },
+    {
+      "route": "issues-snapshot.json",
+      "status": 200,
+      "bytes": 592
+    },
+    {
+      "route": "fulbi-logo.png",
+      "status": 200,
+      "bytes": 1108549
+    },
+    {
+      "route": "documents/FULBI_Guide_RGPD_harmonise_integral_V3.docx",
+      "status": 200,
+      "bytes": 213097
+    }
+  ],
+  "sourceSha256": "269708695b62b5a911fea886b74b8e009c5f9fd548d1ccb0e47f443b494eb338",
+  "logo": "Identique au fichier fourni",
+  "note": "Contrôle HTTP réel après le déploiement GitHub Pages."
+}

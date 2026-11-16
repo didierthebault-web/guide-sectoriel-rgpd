@@ -4,7 +4,7 @@ const {section:s,standalone=false}=Astro.props;const b=import.meta.env.BASE_URL.
 const validation=validations.find(v=>v.id===s.id);const Tag=standalone?'h1':s.level===3?'h3':'h2';
 ---
 <section id={s.id} class="reading-section" data-section={s.id}>
-<Tag data-source={s.heading?.sourceId} data-heading-source={s.heading?.sourceId}>{s.heading?.text||s.title}</Tag>
+<Tag data-source={s.heading?.sourceId} data-heading-source={s.heading?.sourceId} data-pagefind-meta={standalone?'title':undefined}>{s.heading?.text||s.title}</Tag>
 <div class="section-controls" data-pagefind-ignore><span class="validation-badge">{validationFor(s,validation)} · V3</span><button class="copy-link" data-copy-link={`${b}/sections/${s.id}/#${s.id}`}>Copier le lien</button><button class="observation-button" data-observe data-id={s.id} data-title={s.title} data-part={s.part} data-version={guide.version} data-url={`${b}/sections/${s.id}/#${s.id}`}>Proposer une observation</button></div>
 <div class="content" set:html={s.html}/>
 </section>

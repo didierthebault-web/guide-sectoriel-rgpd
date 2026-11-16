@@ -4,7 +4,7 @@ Plateforme statique de lecture intégrale et de concertation publique autour du 
 
 ## Installer et reconstruire
 
-Node.js 22.12 ou ultérieur et Python 3.12 ou ultérieur. Aucune bibliothèque Python supplémentaire n’est requise.
+Node.js 22.23.4 ou ultérieur et Python 3.12 ou ultérieur. Aucune bibliothèque Python supplémentaire n’est requise.
 
 ```sh
 npm ci

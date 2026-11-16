@@ -1,0 +1,20 @@
+{
+  "name": "guide-sectoriel-rgpd",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build && pagefind --site dist --glob sections/**/*.html",
+    "test": "node --test tests/*.test.mjs",
+    "sync": "node scripts/sync-issues/index.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.12",
+    "pagefind": "^1.4.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.56.0"
+  }
+}

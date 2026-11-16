@@ -1,0 +1,2 @@
+import fs from 'node:fs';import path from 'node:path';import files from '../data/tool-files.json';
+export function toolFile(code:string){const item=(files as Array<{code:string;file:string;format:string;version:string;date:string}>).find(t=>t.code===code);if(!item)return null;const root=path.resolve('public/outils');const target=path.resolve(root,item.file);if(!target.startsWith(root+path.sep)||!fs.existsSync(target)||!fs.statSync(target).isFile())throw new Error(`Fichier d’outil absent ou invalide : ${code}`);return item;}

@@ -1,0 +1,121 @@
+{
+  "name": "Proposition de complément",
+  "description": "Observation précise, argumentée et publique sur le guide sectoriel RGPD.",
+  "title": "[Proposition de complément] ",
+  "labels": [
+    "type:complement",
+    "statut:a-instruire"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Les observations sont publiques et associées à votre compte GitHub. Ne publiez aucune donnée personnelle, information confidentielle ou document non destiné à la diffusion. Les décisions éditoriales relèvent des mainteneurs habilités."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "champ-0",
+      "attributes": {
+        "label": "Partie concernée",
+        "options": [
+          "I",
+          "II",
+          "III",
+          "IV",
+          "V",
+          "VI",
+          "VII",
+          "Site technique"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-1",
+      "attributes": {
+        "label": "Identifiant et titre de section"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-2",
+      "attributes": {
+        "label": "URL permanente"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-3",
+      "attributes": {
+        "label": "Version du manuscrit",
+        "value": "V3"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-4",
+      "attributes": {
+        "label": "Passage concerné et autre section en cas de contradiction"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-5",
+      "attributes": {
+        "label": "Constat ou étapes de reproduction"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-6",
+      "attributes": {
+        "label": "Modification proposée ou résultat attendu"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "champ-7",
+      "attributes": {
+        "label": "Justification ou référence documentaire"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "public",
+      "attributes": {
+        "label": "Publication publique",
+        "options": [
+          {
+            "label": "Je comprends que ma contribution est publique et associée à mon compte GitHub.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

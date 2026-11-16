@@ -1,0 +1,20 @@
+name: Statut initial des observations
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+jobs:
+  initial-status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.get({...context.repo, issue_number: context.issue.number});
+            const statuses = issue.data.labels.map(x => x.name).filter(x => x.startsWith('statut:'));
+            // Le statut initial est toujours « À instruire » ; une décision appartient aux mainteneurs.
+            for (const name of statuses.filter(x => x !== 'statut:a-instruire')) {
+              await github.rest.issues.removeLabel({...context.repo, issue_number: context.issue.number, name});
+            }
+            await github.rest.issues.addLabels({...context.repo, issue_number: context.issue.number, labels: ['statut:a-instruire']});

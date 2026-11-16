@@ -1,0 +1,142 @@
+# Concordance documentaire
+
+{
+  "sourceSha256": "269708695b62b5a911fea886b74b8e009c5f9fd548d1ccb0e47f443b494eb338",
+  "parts": 7,
+  "sections": 433,
+  "fiches": 20,
+  "tools": 18,
+  "tables": 60,
+  "paragraphs": 4946,
+  "listItems": 721,
+  "headings": 414,
+  "anomalies": [
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "6C749380",
+      "text": "FICHE 01 — Inscription et gestion des comptes lecteurs"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "17F5EC5D",
+      "text": "FICHE 02 — Gestion des comptes des mineurs"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "19DF327B",
+      "text": "FICHE 03 — Comptes professionnels et institutionnels"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "2AAF0A92",
+      "text": "FICHE 04 — Prêts et retours"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "0C06FC8B",
+      "text": "FICHE 05 — Réservations et circulation entre établissements"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "0F94619B",
+      "text": "FICHE 06 — Retards, relances, pénalités et litiges"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "03A6A873",
+      "text": "FICHE 07 — Historique personnel des emprunts"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "49344627",
+      "text": "FICHE 08 — Consultation sur place et documents patrimoniaux"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "298B8447",
+      "text": "FICHE 09 — Demandes de recherche et de renseignements documentaires"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "42E29BF7",
+      "text": "FICHE 10 — Veille et diffusion sélective d'information"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "0D83527F",
+      "text": "FICHE 11 — Portails documentaires et espaces personnels"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "4485A5AB",
+      "text": "FICHE 12 — Ressources numériques et authentification"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "76AD4876",
+      "text": "FICHE 13 — Wi-Fi, Internet et postes publics"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "31CBA953",
+      "text": "FICHE 14 — Statistiques et analyse des usages"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "4C30E58F",
+      "text": "FICHE 15 — Notifications et lettres d'information"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "54CF884A",
+      "text": "FICHE 16 — Événements, formations et actions culturelles"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "4EBD2F0D",
+      "text": "FICHE 17 — Prêt numérique en bibliothèque (PNB) et ressources numériques empruntables"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "448923EA",
+      "text": "FICHE 18 — Intelligence artificielle et recommandations documentaires personnalisées"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "24F5DE18",
+      "text": "FICHE 19 — RFID, automates de prêt et identification des exemplaires"
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "01B81B65",
+      "text": "FICHE 20 — Reproduction documentaire, numérisation à la demande et fourniture de copies"
+    },
+    {
+      "type": "heading-to-review",
+      "sourceId": "242B2FB1",
+      "text": "3. Distinguer les finalités. Les informations collectées pour un service ne doivent pas être automatiquement réutilisées."
+    },
+    {
+      "type": "heading-to-review",
+      "sourceId": "12FFDF84",
+      "text": "6. Encadrer les fournisseurs. Les établissements doivent connaître les données transmises et les traitements réalisés."
+    },
+    {
+      "type": "heading-to-review",
+      "sourceId": "7D2E9727",
+      "text": "7. Protéger les services numériques dès leur conception. Les paramètres par défaut doivent limiter les risques."
+    },
+    {
+      "type": "duplicate-fiche",
+      "sourceId": "1E46F71F",
+      "text": "FICHE 06 — Retards, relances, pénalités et recouvrement des créances publiques",
+      "note": "Complément conservé à sa place, sans fusion avec la fiche initiale."
+    },
+    {
+      "type": "fiche-without-heading-style",
+      "sourceId": "1E46F71F",
+      "text": "FICHE 06 — Retards, relances, pénalités et recouvrement des créances publiques"
+    }
+  ],
+  "notes": "Préambule conservé. Champ TOC Word conservé par son texte visible ; sommaire web généré. Séparateurs décoratifs VML exclus. Aucun média, commentaire, suivi de modification ou note de fond. Titres Word conservés même lorsque leur style paraît incohérent. En-têtes de colonnes web déduits de la première ligne ; aucun libellé source réécrit."
+}

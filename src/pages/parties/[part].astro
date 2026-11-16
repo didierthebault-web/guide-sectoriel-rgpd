@@ -1,0 +1,6 @@
+---
+import guide from '../../data/guide.json';import Reader from '../../components/Reader.astro';
+export function getStaticPaths(){return guide.parts.map(part=>({params:{part:part.id.toLowerCase()},props:{part}}));}
+const {part}=Astro.props;
+---
+<Reader part={part}/>

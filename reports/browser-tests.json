@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "base": "http://127.0.0.1:5196/guide-sectoriel-rgpd/",
+  "checks": [
+    "Accueil, logo FULBI, sept cartes et aucun débordement à 1440 px",
+    "Lien d’évitement utilisable au clavier",
+    "Vingt fiches et dix-huit outils sans faux téléchargement",
+    "Recherche Pagefind, extraits, filtre et liens sous le chemin de base",
+    "Liens permanents, taille du texte et formulaire précis",
+    "Repli de contribution longue et copie sans presse-papiers",
+    "Instantané réel, date et indicateurs",
+    "Mobile 390 px, navigation repliable et tableaux contenus"
+  ],
+  "scriptErrors": [],
+  "accessibility": [
+    {
+      "route": "",
+      "violations": []
+    },
+    {
+      "route": "fiches/",
+      "violations": []
+    },
+    {
+      "route": "outils/",
+      "violations": []
+    },
+    {
+      "route": "concertation/",
+      "violations": []
+    },
+    {
+      "route": "sections/III-fiche-01/",
+      "violations": []
+    }
+  ]
+}

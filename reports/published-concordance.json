@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "paragraphsCompared": 4946,
+  "order": "identical",
+  "text": "identical including empty paragraphs and table cells",
+  "tablesCompared": 60,
+  "listItemsCompared": 721,
+  "sectionPages": 433,
+  "uniqueAnchors": 433,
+  "sourceSha256": "269708695b62b5a911fea886b74b8e009c5f9fd548d1ccb0e47f443b494eb338"
+}

@@ -1,0 +1,33 @@
+{
+  "repository": "didierthebault-web/guide-sectoriel-rgpd",
+  "syncedAt": "2026-11-16T17:11:45.081Z",
+  "issues": [],
+  "summary": {
+    "total": 0,
+    "open": 0,
+    "status": {
+      "a-instruire": 0,
+      "a-completer": 0,
+      "retenue": 0,
+      "non-retenue": 0,
+      "integree": 0
+    },
+    "parts": {
+      "I": 0,
+      "II": 0,
+      "III": 0,
+      "IV": 0,
+      "V": 0,
+      "VI": 0,
+      "VII": 0
+    },
+    "types": {
+      "juridique": 0,
+      "editorial": 0,
+      "terminologie": 0,
+      "contradiction": 0,
+      "complement": 0,
+      "technique": 0
+    }
+  }
+}

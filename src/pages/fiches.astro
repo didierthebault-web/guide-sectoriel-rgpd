@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro';import guide from '../data/guide.json';const b=import.meta.env.BASE_URL.replace(/\/$/,'');
+---
+<Layout title="Vingt fiches métier"><div class="page-heading"><p class="eyebrow">PARTIE III · TRAITEMENTS</p><h1>Les vingt fiches métier</h1><p>Retrouvez chaque traitement dans le texte intégral du guide : finalité, données, base légale, cas pratiques et hypothèses de conservation.</p></div><div class="list-cards">{guide.fiches.map((f,i)=><article class="list-card"><span class="tool-code">FICHE {String(i+1).padStart(2,'0')}</span><h2>{f.title.replace(/^FICHE \d+\s[—–-]\s/,'')}</h2><a href={`${b}/sections/${f.id}/`}>Lire la fiche →</a>{f.complements.map(id=><p><a href={`${b}/sections/${id}/`}>Complément présent dans le manuscrit : recouvrement des créances publiques →</a></p>)}</article>)}</div></Layout>

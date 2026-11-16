@@ -1,0 +1,68 @@
+name: Publier le guide et synchroniser les observations
+on:
+  push:
+    branches: [main]
+  issues:
+    types: [opened, edited, labeled, unlabeled, closed, reopened, deleted, transferred, milestoned, demilestoned]
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Statut initial des observations]
+    types: [completed]
+  schedule:
+    - cron: '23 */6 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: publication-guide
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer les dépendances
+        run: npm ci
+      - name: Importer et contrôler le manuscrit
+        run: python scripts/import-docx/import.py
+      - name: Restaurer le dernier instantané valide
+        env:
+          SNAPSHOT_URL: https://didierthebault-web.github.io/guide-sectoriel-rgpd/issues-snapshot.json
+        run: node scripts/sync-issues/restore.mjs
+      - name: Synchroniser les observations
+        id: sync
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run sync
+      - name: Tests et construction
+        run: |
+          npm test
+          npm run build
+          python scripts/import-docx/verify.py
+      - name: Publier l’instantané utilisé
+        run: cp src/data/issues.json dist/issues-snapshot.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

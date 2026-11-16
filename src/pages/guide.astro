@@ -1,0 +1,4 @@
+---
+import Layout from '../layouts/Layout.astro';import guide from '../data/guide.json';const b=import.meta.env.BASE_URL.replace(/\/$/,'');
+---
+<Layout title="Sommaire du guide"><div class="page-heading"><p class="eyebrow">LE MANUSCRIT INTÉGRAL · V3</p><h1>Lire le guide</h1><p>Sept parties, vingt fiches métier et dix-huit outils. Choisissez une partie pour la lire intégralement ou accédez directement à une section.</p><a href={`${b}/documents/${guide.source}`} download>Télécharger le manuscrit Word ↓</a></div><div class="directory">{guide.parts.map(p=><details><summary>{p.title}{p.provisional&&' · Provisoire'}</summary><p><a href={`${b}/parties/${p.id.toLowerCase()}/`}>Lire cette partie dans son intégralité →</a></p><ul>{guide.sections.filter(s=>s.part===p.id).map(s=><li class={`level-${s.level}`}><a href={`${b}/sections/${s.id}/`}>{s.title}</a></li>)}</ul></details>)}</div></Layout>
